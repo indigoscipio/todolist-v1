@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List 📃📃</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar-logo mb-m">📰 Minimal Todo</div>
+        <div class="sidebar-projects">
+          <h2 class="heading-2">Your Projects</h2>
+          <form action="" data-new-project-form>
+            <ul class="projects-list" data-lists>
+              <!-- <li class="project-item">Project 1</li>
+            <li class="project-item">Project 2</li>
+            <li class="project-item">Project 3</li> -->
+            </ul>
+            <input
+              type="text"
+              class="project-input"
+              placeholder="Enter a new project..."
+              data-new-project-input
+            />
+            <button class="button add-new-project">New Project</button>
+            <button class="button" data-delete-project-button>
+              Delete selected project
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="project" data-list-display-container>
+        <h1 class="heading-1 mb-m" data-list-title>Project Name</h1>
+        <p class="paragraph" data-list-count>3 Tasks Remaining</p>
+        <input
+          class="todo-input"
+          id="todo-input"
+          type="text"
+          placeholder="Buy groceries at 2PM ..."
+        />
+        <button class="button add-new-list mb-m">Add to List</button>
+        <ul class="todo-list" data-todo-list>
+          <!--data-todo-list = data-tasks -->
+          <li class="todo-item" data-key="0">
+            <i class="icon-checkbox fa-solid fa-check"></i>
+            <span class="todo-item-text">Do Amazing Stuff!</span>
+            <input type="date" class="todo-input-date" />
+            <i class="icon-delete fa-solid fa-trash-can"></i>
+            <i class="icon-edit fa-solid fa-pen-to-square"></i>
+          </li>
+          <li class="todo-item" data-key="1">
+            <i class="icon-checkbox fa-solid fa-check checked"></i>
+            <span class="todo-item-text">Do Amazing Stuff!</span>
+            <input type="date" class="todo-input-date" />
+            <i class="icon-delete fa-solid fa-trash-can"></i>
+            <i class="icon-edit fa-solid fa-pen-to-square"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <template id="task-template">
+      <li class="todo-item" data-key="0">
+        <i class="icon-checkbox fa-solid fa-check"></i>
+        <span class="todo-item-text"></span>
+        <input type="date" class="todo-input-date" />
+        <i class="icon-delete fa-solid fa-trash-can"></i>
+        <i class="icon-edit fa-solid fa-pen-to-square"></i>
+      </li>
+    </template>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/ffb9bf6e53.js"></script>
+  </body>
+</html>

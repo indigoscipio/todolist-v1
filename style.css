@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap");
+
+/* * {
+  border: 1px solid rgba(255, 0, 0, 0.11);
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+}
+
+/* margins */
+.mb-s {
+  margin-bottom: 0.8rem;
+}
+
+.mb-m {
+  margin-bottom: 1.6rem;
+}
+
+.mb-l {
+  margin-bottom: 2.4rem;
+}
+
+/* button */
+.button {
+  padding: 1.6rem 3.2rem;
+  font-family: inherit;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* container */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* sidebar */
+.sidebar {
+  padding: 3.2rem;
+  flex: 0 0 30%;
+}
+
+.sidebar-logo {
+  text-transform: uppercase;
+}
+
+.sidebar-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: flex-start;
+}
+
+/* project */
+.project {
+  flex: 1;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  list-style: none;
+  gap: 1.6rem;
+}
+
+.project-item {
+  padding: 1.6rem;
+  background-color: gray;
+}
+
+.todo-input {
+  border: 1px solid gray;
+  padding: 0.8rem;
+}
+
+.todo-input:focus {
+  outline: none;
+}
+
+.todo-item {
+  align-items: center;
+  padding: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-item-text {
+  margin-left: 1.2rem;
+  flex: 1;
+}
+
+.icon-checkbox,
+.icon-delete,
+.icon-edit {
+  background-color: rgb(233, 233, 233);
+  cursor: pointer;
+  padding: 0.8rem;
+}
+
+.checked {
+  background-color: green;
+}
+
+.active {
+  background-color: darkgray;
+}
